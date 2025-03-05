@@ -53,7 +53,7 @@ def admin_login():
     username = st.sidebar.text_input("Username")
     password = st.sidebar.text_input("Password", type="password")
     if st.sidebar.button("Login"):
-        if username == "admin" and password == "admin123":
+        if username == "admin" and password == "Admin@123":
             st.session_state.logged_in = True
             st.sidebar.success("Logged in successfully!")
         else:
